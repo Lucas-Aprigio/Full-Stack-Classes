@@ -1,0 +1,37 @@
+{%extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    <form method="POST" action="/registrar.html">
+        {{form.csrf_token}}
+        <h1 class="h1">Faça seus calculos com precisão</h1>
+        <h2 class="h2">Faça seu cadastro:</h2>
+        <input class="caixaNome" type="text" name="nome" placeholder="Nome completo">
+        <br>
+        <br>
+        <div class="formData">
+            Sua idade:
+            <input type="number" class="campoData" name="idade"></input>
+        <div>
+        <br>
+        email:
+        <input class="caixaEmail" type="text" name="email" placeholder="email">
+        <br>
+        <br>
+        Senha:
+        <input class="caixaSenha" type="password" name="senha" placeholder="Digite uma senha">
+        <br>
+        <br>
+        </div>
+
+        <button>Registrar</button> 
+       
+        </div>
+        <b><div>
+       
+    </form>
+    </div>
+
+
+
+    {% endblock %}

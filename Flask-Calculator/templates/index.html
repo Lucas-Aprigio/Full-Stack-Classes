@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+    <h1> Olá, {{current_user.nome_completo}}! Faça seus calculos: </h1>       
+    </div>
+    
+    <form action="{{ url_for('calculaflask') }}" method="post">
+               
+            <label>Número 1</label>
+            <input type="n1" id="n1" name="n1"/>
+            <label>Número 2</label>
+            <input type="n2" id="n2" name="n2"/>
+            <label>OPERAÇÃO:</label>
+            <select id="operation" name="operation">
+                <option value="soma">Adição</option>
+                <option value="sub">Subtração</option>
+                <option value="div">Divisão</option>
+                <option value="mult">Multiplicação</option>
+            </select>
+            <button id="botaoCalcular" type="submit">Calcular</button>
+
+            <br>
+            <p>Resultado:{{n1}} {{operation}} {{n2}} é: {{resultado}}</p>
+        
+    
+    
+        
+{% endblock %}

@@ -1,0 +1,80 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: lightgray;
+    color: rgba(0, 0, 0, 1)
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    border: 400px;
+}
+
+header#cabecalho{
+    border-bottom: 1px gray solid;
+    height: 100px;
+}
+
+nav#menu ul{
+    list-style:none;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+nav#menu li{
+    display:inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+.caixaNome{
+    width: 70%;
+}
+.caixaEmail{
+    width:70%;
+}
+
+
+button{
+    position: relative;
+    background-color: darkgray;
+    color: white;
+    font-size:big;
+    border: 1px;
+    left: 50%;
+}
+
+#botaoCalcular{
+    background-color: darkgray;
+    position:static;
+    border: 1px;
+    align-content:left;
+
+}
+
+p{
+    font-size:small;
+    color:black;
+}
+
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 15pt;
+    text-shadow: rgba(0, 0, 0, .8);
+    color: black;
+    padding: 0px;
+    margin-top: 0px; 
+    
+}
+h2{
+    position: relative;
+    text-align: left;
+}
+
